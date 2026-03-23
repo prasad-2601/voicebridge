@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>VoiceBridge</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>🎙️ VoiceBridge</h1>
+
+    <!-- TEXT TO SPEECH -->
+    <div class="card">
+        <h2>Text → Speech</h2>
+        <textarea id="textInput" placeholder="Enter text..."></textarea>
+        <button onclick="convertTTS()">Convert & Play</button>
+        <audio id="audioPlayer" controls></audio>
+    </div>
+
+    <!-- SPEECH TO TEXT -->
+    <div class="card">
+        <h2>Speech → Text</h2>
+        <input type="file" id="audioFile">
+        <button onclick="convertSTT()">Upload & Convert</button>
+        <p id="outputText"></p>
+    </div>
+</div>
+
+<script src="/static/script.js"></script>
+
+</body>
+</html>
